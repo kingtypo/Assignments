@@ -10,6 +10,7 @@ public class Followers {
 	
 	private String handle1;
 	private String handle2;
+	private String errormessage;
 	private List<TwitterProfile> mutualFollowersData;
 
 	public String getHandle1() {
@@ -35,7 +36,12 @@ public class Followers {
 	public void setMutualFollowersData(List<TwitterProfile> mutualFollowersData) {
 		this.mutualFollowersData = mutualFollowersData;
 	}
-	
-	
 
+	public String getErrormessage() {
+		return errormessage;
+	}
+
+	public void setErrormessage(String errormessage) {
+		this.errormessage = errormessage;
+	}
 }

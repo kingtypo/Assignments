@@ -15,7 +15,7 @@
 				<div id="content">
 					<h1>LiftOff Assignment</h1>
 					<hr>
-					<h3>Enter two Twitter handles</h3>
+					<h3 th:text="${followers.errormessage} ?: 'Enter two Twitter handles'"></h3>
 					<form action="#" th:action="@{/}" th:object="${followers}" method="post" id="central">
 						<div class="form-group">
 							<label >Handle A</label>
